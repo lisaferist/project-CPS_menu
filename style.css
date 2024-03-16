@@ -1,0 +1,122 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: "TTLakes-Medium", sans-serif;
+    background-color: #FDFDFD;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 16px;
+}
+
+.menu {
+    background-color: white;
+    width: 320px;
+    height: 1024px;
+    float: left;
+    box-shadow: -50px 0 100px 0 #454F7E;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.header__icon, .contact__icon {
+    display: inline-block;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    transition-duration: 500ms;
+    transition-property: opacity, transform;
+}
+.header__icon:hover, .contact__icon:hover{
+    opacity: 0.6;
+    transform: scale(1.1);
+}
+.menu__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding:0;
+}
+.header__icon:nth-child(1){
+    background: #FF3E79 url("images/icons/burgerX.svg") 0 0;
+    margin-right: 15px;
+}
+.header__icon:last-child {
+    background: #FF3E79 url("images/icons/search.svg") 0 0;
+}
+.header__logo {
+    margin-right: auto;
+    height: auto;
+    width: 97px;
+}
+
+.menu__nav {
+    list-style: none;
+    padding: 0;
+}
+.nav__item:nth-child(1):before{
+     content: '';
+     border: 4px solid #00FFC4;
+     border-radius: 5px;
+     height: 32px;
+     position: absolute;
+     left: -4px;
+     top: 110px;
+ }
+.nav__item {
+    display: block;
+    padding: 20px 0;
+    transition-duration: 500ms;
+    transition-property: color;
+}
+.nav__item:nth-child(1){
+    color: #7E7E82;
+}
+.nav__item:hover{
+    color: #454F7E;
+}
+
+.menu__contact {
+    margin-top: 70%;
+}
+.contact__icon:nth-child(1){
+    background: #FF3E79 url("images/icons/call.svg") 0 0;
+    margin-right: 15px;
+}
+.contact__icon:nth-child(2){
+    background: #FF3E79 url("images/icons/chat.svg") 0 0;
+    margin-right: 15px;
+}
+.contact__icon:nth-child(3){
+    background: #FF3E79 url("images/icons/profile.svg") 0 0;
+}
+.contact__email {
+    margin: 10px 0;
+}
+.contact__phone {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.menu__lang-button {
+    border: none;
+    background-color: inherit;
+    padding: 0;
+    font-family: inherit;
+    font-size: inherit;
+    transition-duration: 500ms;
+    transition-property: color;
+}
+.menu__lang-button:hover{
+    color: #454F7E;
+}
+.menu__lang-button:nth-child(1){
+    color: #7E7E82;
+}
