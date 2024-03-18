@@ -16,11 +16,15 @@ body {
 .menu {
     background-color: white;
     width: 320px;
-    height: 1024px;
-    float: left;
+    min-height: 800px;
+    height: 100%;
     box-shadow: -50px 0 100px 0 #454F7E;
     margin: 0;
     padding: 0 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .header__icon, .contact__icon {
@@ -83,7 +87,8 @@ body {
 }
 
 .menu__contact {
-    margin-top: 70%;
+    position: absolute;
+    bottom: 60px;
 }
 .contact__icon:nth-child(1){
     background: #FF3E79 url("images/icons/call.svg") 0 0;
@@ -105,6 +110,10 @@ body {
     margin-top: 0;
 }
 
+.menu__lang {
+    position: absolute;
+    bottom: 25px;
+}
 .menu__lang-button {
     border: none;
     background-color: inherit;
